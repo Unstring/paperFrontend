@@ -2,7 +2,13 @@
 RewriteEngine On
 RewriteBase /
 
-# Redirect to the requested resource inside the dist folder if it's not a file or directory
+# Serve files from the dist folder if they exist
+RewriteCond %{REQUEST_URI} !^/dist/
+RewriteCond %{DOCUMENT_ROOT}/dist%{REQUEST_URI} -f [OR]
+RewriteCond %{DOCUMENT_ROOT}/dist%{REQUEST_URI} -d
+RewriteRule ^(.*)$ /dist/$1 [L]
+
+# Redirect to index.html for non-existent files or directories
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /dist/$1 [L]
+RewriteRule ^ /dist/index.html [L]
