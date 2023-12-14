@@ -1,0 +1,8 @@
+# Enable rewrite engine
+RewriteEngine On
+RewriteBase /
+
+# Redirect to index.html if the requested resource is not a file or directory
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.html [L]
