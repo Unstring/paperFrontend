@@ -2,10 +2,10 @@ node_modules/
 public/
 src/
 
-./index.html
-./package-lock.json
-./package.json
-./postcss.config.cjs
-./tailwind.config.cjs
-./vite.config.js
-./favicon.svg
+index.html
+package-lock.json
+package.json
+postcss.config.cjs
+tailwind.config.cjs
+vite.config.js
+favicon.svg
