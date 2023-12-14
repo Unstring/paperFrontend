@@ -2,7 +2,7 @@
 RewriteEngine On
 RewriteBase /
 
-# Redirect to index.html if the requested resource is not a file or directory
+# Redirect to index.html inside the dist folder if the requested resource is not a file or directory
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /index.html [L]
+RewriteRule ^(.*)$ /dist/index.html [L]
