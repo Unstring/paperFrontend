@@ -1,1 +1,0 @@
-import{r as l,a}from"./index.7b2498f5.js";import{T as n}from"./Textinput.a27538e0.js";const p=({filter:t,setFilter:r})=>{const[o,s]=l.exports.useState(t);return a("div",{children:a(n,{value:o||"",onChange:e=>{s(e.target.value),r(e.target.value||void 0)},placeholder:"search..."})})};export{p as G};
