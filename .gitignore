@@ -10,3 +10,4 @@ postcss.config.cjs
 tailwind.config.cjs
 vite.config.js
 favicon.svg
+yarn.lock
