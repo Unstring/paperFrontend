@@ -1,6 +1,7 @@
 node_modules/
 public/
 src/
+ign/
 
 index.html
 package-lock.json
